@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f0f11" media="(prefers-color-scheme: dark)">
-<meta name="description" content="Tiendo, una tienda inventada con productos dibujados: web de demostración para ISFlow.">
+<meta name="description" content="Tiendo, una tienda inventada con fotos de dominio público: web de demostración para ISFlow.">
 <meta name="robots" content="noindex">
 <title>Auriculares inalámbricos Eco · Tiendo</title>
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -50,7 +50,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .hero b{display:block;font-size:22px;line-height:1.15;margin:4px 0 6px;max-width:70%}
 .hero span{display:block;font-size:13.5px;opacity:.95;max-width:65%}
 .hero a{display:inline-block;margin-top:12px;background:#fff;color:#9a3412;font-weight:700;font-size:13px;padding:7px 14px;border-radius:999px}
-.hero img{position:absolute;right:8px;bottom:6px;width:112px;height:112px;border-radius:14px}
+.hero img{position:absolute;right:8px;bottom:6px;width:112px;height:112px;border-radius:14px;object-fit:cover;box-shadow:0 4px 14px rgba(0,0,0,.18)}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:4px 12px 6px;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chips a,.chips span{flex:none;display:flex;align-items:center;gap:6px;height:34px;padding:0 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:13.5px;font-weight:600}
@@ -61,7 +61,7 @@ h2.sec a{font-size:13px;color:var(--accent);font-weight:650}
 @media (min-width:600px){.grid{grid-template-columns:repeat(3,1fr)}}
 .card{display:block;background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
 .card .ph{display:block;aspect-ratio:1;background:var(--soft)}
-.card .ph img{display:block;width:100%;height:100%}
+.card .ph img{display:block;width:100%;height:100%;object-fit:cover}
 .card .info{display:block;padding:9px 10px 11px}
 .card .name{display:block;font-size:13.5px;line-height:1.3;height:2.6em;overflow:hidden}
 .price{display:block;font-weight:800;font-size:17px;margin-top:4px}
@@ -109,7 +109,7 @@ h2.sec a{font-size:13px;color:var(--accent);font-weight:650}
 .buybar .add{background:var(--accent);color:var(--accent-fg)}
 .buybar .now{background:var(--fg);color:var(--bg);flex:.8}
 .line{display:flex;gap:12px;background:var(--card);margin:10px 12px 0;border-radius:14px;border:1px solid var(--line);padding:10px}
-.line img{width:88px;height:88px;border-radius:10px;background:var(--soft);flex:none}
+.line img{width:88px;height:88px;border-radius:10px;background:var(--soft);flex:none;object-fit:cover}
 .line .info{flex:1;min-width:0}
 .line .name{font-size:14px;line-height:1.3}
 .line .price{font-size:16px}
@@ -129,7 +129,7 @@ h2.sec a{font-size:13px;color:var(--accent);font-weight:650}
 .state.done{color:var(--ok)}
 .order .when{color:var(--muted);font-size:13.5px}
 .order .pics{display:flex;gap:8px;margin-top:10px}
-.order .pics img{width:64px;height:64px;border-radius:10px;background:var(--soft)}
+.order .pics img{width:64px;height:64px;border-radius:10px;background:var(--soft);object-fit:cover}
 .order .btns{display:flex;gap:8px;margin-top:12px}
 .order .btns button{flex:1;height:38px;border-radius:10px;border:1px solid var(--line);font-weight:650;font-size:13.5px}
 .track{height:6px;border-radius:3px;background:var(--soft);margin-top:10px;overflow:hidden}
@@ -151,10 +151,19 @@ h2.sec a{font-size:13px;color:var(--accent);font-weight:650}
 .tabbar .ic{position:relative}
 .tabbar .ic .n{position:absolute;top:-4px;right:-9px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:var(--accent);color:var(--accent-fg);font-size:10px;font-weight:700;display:grid;place-items:center}
 .demo{margin:22px 14px 18px;text-align:center;color:var(--muted);font-size:12px}
+.credits{list-style:none;margin:0;padding:0 14px}
+.credits li{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:13px;line-height:1.4}
+.credits li:first-child{border-top:0}
+.credits img{width:56px;height:56px;border-radius:8px;object-fit:cover;flex:none;background:var(--soft)}
+.credits div{min-width:0}
+.credits b,.credits span{display:block;overflow-wrap:anywhere}
+.credits a{color:var(--accent)}
+.intro{margin:14px;font-size:14px}
+.demo a{color:inherit;text-decoration:underline}
 </style>
 </head>
 <body class="buying">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Auriculares inalámbricos Eco","description":"Hasta 30 horas de batería y almohadillas plegables.","image":"https://isflow-tienda.github.io/img/auriculares.svg","offers":{"@type":"Offer","price":"39.90","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Auriculares inalámbricos Eco","description":"Hasta 30 horas de batería y almohadillas plegables.","image":"https://isflow-tienda.github.io/img/auriculares.webp","offers":{"@type":"Offer","price":"39.90","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}</script>
 <div class="smartbanner" role="complementary" aria-label="Aplicación de Tiendo">
 <button class="sb-x" type="button" aria-label="Cerrar"><svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
 <span class="sb-ic"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#ea580c"/><path d="M9 12h14l-1.2 11.5a1.6 1.6 0 0 1-1.6 1.5h-8.4a1.6 1.6 0 0 1-1.6-1.5z" fill="#fff"/><path d="M12.5 12V10.5a3.5 3.5 0 0 1 7 0V12" fill="none" stroke="#fff" stroke-width="2"/><path d="M13 17.5q3 2.6 6 0" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round"/></svg></span>
@@ -163,13 +172,13 @@ h2.sec a{font-size:13px;color:var(--accent);font-weight:650}
 </div>
 <header class="hdr"><div class="row"><a class="act" href="/c/tecnologia/" aria-label="Volver"><svg class="i" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg></a><a class="logo" href="/" aria-label="Tiendo, inicio"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#ea580c"/><path d="M9 12h14l-1.2 11.5a1.6 1.6 0 0 1-1.6 1.5h-8.4a1.6 1.6 0 0 1-1.6-1.5z" fill="#fff"/><path d="M12.5 12V10.5a3.5 3.5 0 0 1 7 0V12" fill="none" stroke="#fff" stroke-width="2"/><path d="M13 17.5q3 2.6 6 0" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round"/></svg></a><span style="flex:1"></span><a class="act" href="/c/" aria-label="Buscar"><svg class="i" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a><a class="act" href="/cart/" aria-label="Cesta"><svg class="i" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n">3</span></a><a class="act" href="/account/" aria-label="Cuenta"><svg class="i" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a></div></header>
 <main class="wrap">
-<section class="gallery"><img src="/img/auriculares.svg" alt="Auriculares inalámbricos Eco" width="400" height="400"><span class="dots"><i class="on"></i><i></i><i></i></span></section>
+<section class="gallery"><img src="/img/auriculares.webp" alt="Auriculares inalámbricos Eco" width="720" height="720"><span class="dots"><i class="on"></i><i></i><i></i></span></section>
 <section class="pd"><a href="/c/tecnologia/" style="color:var(--accent);font-size:13px;font-weight:650">Tecnología</a><h1>Auriculares inalámbricos Eco</h1><span class="stars"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg>4,3 <span>(1204)</span></span><div class="price">39,90 €<s>59,90 €</s><span class="off">-33 %</span></div><span class="tag">Envío gratis · Llega el miércoles 21 de octubre</span>
 <div class="opts" aria-label="Colores"><span class="on" style="background:#ea580c"></span><span style="background:#0f766e"></span><span style="background:#e7e5e4"></span><span style="background:#27272a"></span></div></section>
-<section class="block"><h2>Descripción</h2><p>Hasta 30 horas de batería y almohadillas plegables. Producto de demostración: dibujado, no se vende.</p></section>
+<section class="block"><h2>Descripción</h2><p>Hasta 30 horas de batería y almohadillas plegables. Producto de demostración: la foto es de dominio público y no se vende.</p></section>
 <section class="block"><h2>Detalles</h2><dl><dt>Vendido por</dt><dd>Tiendo</dd><dt>Devolución</dt><dd>Gratis durante 30 días</dd><dt>Garantía</dt><dd>2 años</dd></dl></section>
 <section class="block"><h2>Opiniones (1204)</h2><div class="rev"><span class="who"><span class="av" style="--s:28px;background:linear-gradient(135deg,hsl(200 80% 62%),hsl(240 80% 48%))" aria-hidden="true">AP</span>Ana P.<span class="stars"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg></span></span><p>Tal como en las fotos, muy buena calidad.</p></div><div class="rev"><span class="who"><span class="av" style="--s:28px;background:linear-gradient(135deg,hsl(340 75% 62%),hsl(20 75% 48%))" aria-hidden="true">JM</span>Jorge M.<span class="stars"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg></span></span><p>Llegó en dos días y bien embalado.</p></div><div class="rev"><span class="who"><span class="av" style="--s:28px;background:linear-gradient(135deg,hsl(290 60% 62%),hsl(330 60% 48%))" aria-hidden="true">LR</span>Lucía R.<span class="stars"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg></span></span><p>Muy contenta con la compra, repetiré.</p></div></section>
-<footer class="demo">Web de demostración para ISFlow · contenido inventado</footer>
+<footer class="demo">Web de demostración para ISFlow · contenido inventado · fotos de dominio público (<a href="/creditos/">créditos</a>)</footer>
 </main>
 <div class="buybar"><span class="p"><b>39,90 €</b><small>En stock</small></span><button type="button" class="add">Añadir a la cesta</button><button type="button" class="now">Comprar ya</button></div>
 

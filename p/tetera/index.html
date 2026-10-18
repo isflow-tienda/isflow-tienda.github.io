@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f0f11" media="(prefers-color-scheme: dark)">
+<meta name="description" content="Tiendo, una tienda inventada con productos dibujados: web de demostración para ISFlow.">
+<meta name="robots" content="noindex">
+<title>Tetera esmaltada Nido 0,8 l · Tiendo</title>
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style>
+:root{--bg:#f6f6f4;--fg:#18181b;--muted:#6b6b72;--line:#e7e5e1;--card:#fff;--soft:#efeeea;--accent:#ea580c;--accent-fg:#fff;--deal:#dc2626;--ok:#15803d;--banner:#fff;--glass:rgba(255,255,255,.9)}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f11;--fg:#ececee;--muted:#a0a0a8;--line:#26262b;--card:#18181b;--soft:#202024;--accent:#fb7c35;--accent-fg:#1a0b03;--deal:#f87171;--ok:#4ade80;--banner:#18181b;--glass:rgba(24,24,27,.9)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.42 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;padding-bottom:calc(64px + env(safe-area-inset-bottom));-webkit-tap-highlight-color:transparent}
+body.buying{padding-bottom:0}
+.buying main{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.i{display:block;flex:none}
+.wrap{max-width:720px;margin:0 auto}
+.av{display:inline-flex;align-items:center;justify-content:center;flex:none;width:var(--s);height:var(--s);border-radius:50%;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.28);font-weight:700;font-size:calc(var(--s)*.38)}
+.smartbanner{display:flex;align-items:center;gap:10px;padding:10px 12px 10px 8px;background:var(--banner);border-bottom:1px solid var(--line);font-size:13px}
+.smartbanner .sb-x{width:28px;height:28px;display:grid;place-items:center;color:var(--muted)}
+.smartbanner .sb-ic{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:#ea580c;box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.smartbanner .sb-t{flex:1;min-width:0;line-height:1.25}
+.smartbanner .sb-t strong{display:block;font-size:14px}
+.smartbanner .sb-t span{display:block;color:var(--muted);font-size:12px}
+.smartbanner .sb-open{background:var(--accent);color:var(--accent-fg);font-weight:650;font-size:14px;padding:7px 18px;border-radius:999px}
+.hdr{position:sticky;top:0;z-index:20;background:var(--glass);-webkit-backdrop-filter:saturate(1.5) blur(14px);backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)}
+.hdr .row{display:flex;align-items:center;gap:10px;height:52px;padding:0 12px}
+.hdr h1{flex:1;margin:0;font-size:18px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.logo{display:flex;align-items:center;gap:7px;font-weight:800;font-size:22px;letter-spacing:-.04em}
+.logo .mark{width:28px;height:28px}
+.deliver{flex:1;display:flex;align-items:center;justify-content:flex-end;gap:4px;color:var(--muted);font-size:12.5px;white-space:nowrap;overflow:hidden}
+.hdr .act{position:relative;width:38px;height:38px;display:grid;place-items:center;border-radius:50%}
+.hdr .act .n{position:absolute;top:2px;right:0;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:var(--accent);color:var(--accent-fg);font-size:10.5px;font-weight:700;display:grid;place-items:center}
+.finder{display:flex;gap:8px;padding:0 12px 10px}
+.finder label{flex:1;display:flex;align-items:center;gap:8px;height:42px;padding:0 12px;border-radius:12px;background:var(--card);border:1.5px solid var(--accent);color:var(--muted)}
+.finder input{flex:1;min-width:0;border:0;background:none;font:inherit;color:var(--fg);outline:none}
+.hero{margin:12px;border-radius:18px;padding:18px 18px 16px;color:#fff;background:linear-gradient(120deg,#ea580c,#f59e0b 60%,#fbbf24);position:relative;overflow:hidden;min-height:132px}
+.hero::after{content:"";position:absolute;right:-30px;top:-30px;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,.18)}
+.hero small{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;opacity:.9}
+.hero b{display:block;font-size:22px;line-height:1.15;margin:4px 0 6px;max-width:70%}
+.hero span{display:block;font-size:13.5px;opacity:.95;max-width:65%}
+.hero a{display:inline-block;margin-top:12px;background:#fff;color:#9a3412;font-weight:700;font-size:13px;padding:7px 14px;border-radius:999px}
+.hero img{position:absolute;right:8px;bottom:6px;width:112px;height:112px;border-radius:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 12px 6px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a,.chips span{flex:none;display:flex;align-items:center;gap:6px;height:34px;padding:0 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:13.5px;font-weight:600}
+.chips .on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+h2.sec{margin:14px 12px 8px;font-size:17px;display:flex;justify-content:space-between;align-items:baseline}
+h2.sec a{font-size:13px;color:var(--accent);font-weight:650}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:0 12px}
+@media (min-width:600px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{display:block;background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.card .ph{display:block;aspect-ratio:1;background:var(--soft)}
+.card .ph img{display:block;width:100%;height:100%}
+.card .info{display:block;padding:9px 10px 11px}
+.card .name{display:block;font-size:13.5px;line-height:1.3;height:2.6em;overflow:hidden}
+.price{display:block;font-weight:800;font-size:17px;margin-top:4px}
+.price s{color:var(--muted);font-weight:500;font-size:12.5px;margin-left:5px}
+.price .off{color:var(--deal);font-size:12px;font-weight:700;margin-left:5px}
+.stars{display:flex;align-items:center;gap:3px;color:var(--muted);font-size:12px;margin-top:2px}
+.stars .i{color:#f59e0b}
+.tag{display:block;margin-top:5px;font-size:11.5px;color:var(--ok);font-weight:650}
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px}
+.cat{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.cat img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+.cat b{padding:10px 12px 0;font-size:15px}
+.cat span{padding:2px 12px 12px;color:var(--muted);font-size:12.5px}
+.filters{display:flex;gap:8px;overflow-x:auto;padding:10px 12px;scrollbar-width:none}
+.filters button{flex:none;display:flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:9px;background:var(--card);border:1px solid var(--line);font-size:13px;font-weight:600}
+.count{margin:0 12px 8px;color:var(--muted);font-size:13px}
+.gallery{background:var(--card);aspect-ratio:1;max-height:62vh;display:flex;justify-content:center;position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block}
+.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px}
+.dots i{width:7px;height:7px;border-radius:50%;background:rgba(0,0,0,.18)}
+.dots i.on{background:rgba(0,0,0,.6)}
+.pd{background:var(--card);padding:14px 14px 16px;border-bottom:1px solid var(--line)}
+.pd h1{font-size:19px;line-height:1.3;margin:6px 0 4px;font-weight:650}
+.pd .price{font-size:26px}
+.pd .tag{font-size:13px}
+.opts{display:flex;gap:8px;margin-top:12px}
+.opts span{width:34px;height:34px;border-radius:50%;border:2px solid var(--bg);box-shadow:0 0 0 1.5px var(--line)}
+.opts span.on{box-shadow:0 0 0 2px var(--fg)}
+.block{background:var(--card);margin-top:8px;padding:14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.block h2{font-size:16px;margin:0 0 8px}
+.block p{margin:0;font-size:14.5px;color:var(--fg)}
+.block dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0;font-size:14px}
+.block dt{color:var(--muted)}
+.block dd{margin:0}
+.rev{padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+.rev:first-of-type{border-top:0}
+.rev .who{display:flex;align-items:center;gap:8px;font-weight:650}
+.rev .who .stars{margin:0}
+.rev p{margin-top:6px}
+.buybar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;align-items:center;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--glass);-webkit-backdrop-filter:saturate(1.5) blur(14px);backdrop-filter:saturate(1.5) blur(14px);border-top:1px solid var(--line)}
+.buybar .p{line-height:1.1}
+.buybar .p b{display:block;font-size:18px}
+.buybar .p small{color:var(--ok);font-size:11.5px;font-weight:650}
+.buybar button{flex:1;height:48px;border-radius:14px;font-weight:750;font-size:15.5px}
+.buybar .add{background:var(--accent);color:var(--accent-fg)}
+.buybar .now{background:var(--fg);color:var(--bg);flex:.8}
+.line{display:flex;gap:12px;background:var(--card);margin:10px 12px 0;border-radius:14px;border:1px solid var(--line);padding:10px}
+.line img{width:88px;height:88px;border-radius:10px;background:var(--soft);flex:none}
+.line .info{flex:1;min-width:0}
+.line .name{font-size:14px;line-height:1.3}
+.line .price{font-size:16px}
+.qty{display:flex;align-items:center;gap:6px;margin-top:6px}
+.qty button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);display:grid;place-items:center;font-weight:700}
+.qty span{min-width:22px;text-align:center;font-weight:650}
+.qty .del{width:auto;padding:0 10px;margin-left:auto;color:var(--muted);font-weight:600;font-size:13px}
+.sum{background:var(--card);margin:12px;border-radius:14px;border:1px solid var(--line);padding:14px}
+.sum div{display:flex;justify-content:space-between;padding:4px 0;font-size:14.5px}
+.sum .total{border-top:1px solid var(--line);margin-top:6px;padding-top:10px;font-weight:800;font-size:17px}
+.sum .go{display:flex;justify-content:center;align-items:center;height:48px;margin-top:12px;border-radius:14px;background:var(--accent);color:var(--accent-fg);font-weight:750}
+.free{margin:12px 12px 0;padding:10px 12px;border-radius:12px;background:color-mix(in srgb,var(--ok) 12%,var(--card));color:var(--ok);font-size:13.5px;font-weight:600;display:flex;gap:8px;align-items:center}
+.order{background:var(--card);margin:10px 12px 0;border-radius:14px;border:1px solid var(--line);padding:12px}
+.order .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+.state{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-weight:700;font-size:15px}
+.state.way{color:var(--accent)}
+.state.done{color:var(--ok)}
+.order .when{color:var(--muted);font-size:13.5px}
+.order .pics{display:flex;gap:8px;margin-top:10px}
+.order .pics img{width:64px;height:64px;border-radius:10px;background:var(--soft)}
+.order .btns{display:flex;gap:8px;margin-top:12px}
+.order .btns button{flex:1;height:38px;border-radius:10px;border:1px solid var(--line);font-weight:650;font-size:13.5px}
+.track{height:6px;border-radius:3px;background:var(--soft);margin-top:10px;overflow:hidden}
+.track i{display:block;height:100%;width:66%;background:var(--accent);border-radius:3px}
+.me{display:flex;align-items:center;gap:14px;margin:12px;padding:16px;background:var(--card);border-radius:16px;border:1px solid var(--line)}
+.me b{display:block;font-size:18px}
+.me span{color:var(--muted);font-size:13.5px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 12px}
+.tiles a,.tiles button{display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 4px;background:var(--card);border:1px solid var(--line);border-radius:14px;font-size:12.5px;font-weight:600}
+.tiles .i{color:var(--accent)}
+.menu{margin:12px;background:var(--card);border-radius:16px;border:1px solid var(--line);overflow:hidden}
+.menu a,.menu button{display:flex;align-items:center;gap:12px;width:100%;padding:14px;border-top:1px solid var(--line);font-size:15px;text-align:left}
+.menu > :first-child{border-top:0}
+.menu .t{flex:1}
+.menu .i:last-child{color:var(--muted)}
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:space-around;background:var(--glass);-webkit-backdrop-filter:saturate(1.5) blur(14px);backdrop-filter:saturate(1.5) blur(14px);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+.tabbar a{flex:1;max-width:130px;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 0 7px;font-size:10.5px;font-weight:600;color:var(--muted)}
+.tabbar a[aria-current=page]{color:var(--accent)}
+.tabbar .ic{position:relative}
+.tabbar .ic .n{position:absolute;top:-4px;right:-9px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:var(--accent);color:var(--accent-fg);font-size:10px;font-weight:700;display:grid;place-items:center}
+.demo{margin:22px 14px 18px;text-align:center;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body class="buying">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Tetera esmaltada Nido 0,8 l","description":"Tetera con filtro de acero, para tres o cuatro tazas.","image":"https://isflow-tienda.github.io/img/tetera.svg","offers":{"@type":"Offer","price":"27.90","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}</script>
+<div class="smartbanner" role="complementary" aria-label="Aplicación de Tiendo">
+<button class="sb-x" type="button" aria-label="Cerrar"><svg class="i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+<span class="sb-ic"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#ea580c"/><path d="M9 12h14l-1.2 11.5a1.6 1.6 0 0 1-1.6 1.5h-8.4a1.6 1.6 0 0 1-1.6-1.5z" fill="#fff"/><path d="M12.5 12V10.5a3.5 3.5 0 0 1 7 0V12" fill="none" stroke="#fff" stroke-width="2"/><path d="M13 17.5q3 2.6 6 0" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+<div class="sb-t"><strong>Usa la app de Tiendo</strong><span>Envío gratis en tu primer pedido</span></div>
+<a class="sb-open" href="https://play.google.com/store/apps/details?id=com.example.tiendo.demo">Abrir</a>
+</div>
+<header class="hdr"><div class="row"><a class="act" href="/c/cocina/" aria-label="Volver"><svg class="i" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg></a><a class="logo" href="/" aria-label="Tiendo, inicio"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#ea580c"/><path d="M9 12h14l-1.2 11.5a1.6 1.6 0 0 1-1.6 1.5h-8.4a1.6 1.6 0 0 1-1.6-1.5z" fill="#fff"/><path d="M12.5 12V10.5a3.5 3.5 0 0 1 7 0V12" fill="none" stroke="#fff" stroke-width="2"/><path d="M13 17.5q3 2.6 6 0" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round"/></svg></a><span style="flex:1"></span><a class="act" href="/c/" aria-label="Buscar"><svg class="i" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a><a class="act" href="/cart/" aria-label="Cesta"><svg class="i" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n">3</span></a><a class="act" href="/account/" aria-label="Cuenta"><svg class="i" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a></div></header>
+<main class="wrap">
+<section class="gallery"><img src="/img/tetera.svg" alt="Tetera esmaltada Nido 0,8 l" width="400" height="400"><span class="dots"><i class="on"></i><i></i><i></i></span></section>
+<section class="pd"><a href="/c/cocina/" style="color:var(--accent);font-size:13px;font-weight:650">Cocina</a><h1>Tetera esmaltada Nido 0,8 l</h1><span class="stars"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg>4,5 <span>(58)</span></span><div class="price">27,90 €</div><span class="tag">Envío gratis · Llega el miércoles 21 de octubre</span>
+<div class="opts" aria-label="Colores"><span class="on" style="background:#ea580c"></span><span style="background:#0f766e"></span><span style="background:#e7e5e4"></span><span style="background:#27272a"></span></div></section>
+<section class="block"><h2>Descripción</h2><p>Tetera con filtro de acero, para tres o cuatro tazas. Producto de demostración: dibujado, no se vende.</p></section>
+<section class="block"><h2>Detalles</h2><dl><dt>Vendido por</dt><dd>Tiendo</dd><dt>Devolución</dt><dd>Gratis durante 30 días</dd><dt>Garantía</dt><dd>2 años</dd></dl></section>
+<section class="block"><h2>Opiniones (58)</h2><div class="rev"><span class="who"><span class="av" style="--s:28px;background:linear-gradient(135deg,hsl(200 80% 62%),hsl(240 80% 48%))" aria-hidden="true">AP</span>Ana P.<span class="stars"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg></span></span><p>Tal como en las fotos, muy buena calidad.</p></div><div class="rev"><span class="who"><span class="av" style="--s:28px;background:linear-gradient(135deg,hsl(340 75% 62%),hsl(20 75% 48%))" aria-hidden="true">JM</span>Jorge M.<span class="stars"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg></span></span><p>Llegó en dos días y bien embalado.</p></div><div class="rev"><span class="who"><span class="av" style="--s:28px;background:linear-gradient(135deg,hsl(290 60% 62%),hsl(330 60% 48%))" aria-hidden="true">LR</span>Lucía R.<span class="stars"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4l-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg></span></span><p>Muy contenta con la compra, repetiré.</p></div></section>
+<footer class="demo">Web de demostración para ISFlow · contenido inventado</footer>
+</main>
+<div class="buybar"><span class="p"><b>27,90 €</b><small>En stock</small></span><button type="button" class="add">Añadir a la cesta</button><button type="button" class="now">Comprar ya</button></div>
+
+</body>
+</html>
